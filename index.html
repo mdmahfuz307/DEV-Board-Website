@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Dev Board</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- DaisyUi -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        .poppins {
+            font-family: "Poppins", sans-serif;
+        }
+
+        .grad {
+            background-image: linear-gradient(to right, #3752FD, #9BA8F8);
+        }
+    </style>
+</head>
+
+<body class="bg-[#f4f7ff] poppins">
+    <section class="mx-auto max-w-screen-2xl pt-4 pb-4">
+        <!-- Nav Bar -->
+        <nav>
+            <div class="navbar bg-base-100 rounded-2xl">
+                <div class="flex-1">
+                    <a class="btn btn-ghost text-3xl"><img src="./assets/logo.png" alt=""><span
+                            class="font-light">Dev</span><span class="font-extrabold">Board</span></a>
+                </div>
+                <div class="flex-none">
+                    <ul class="menu menu-horizontal px-1 gap-2">
+                        <button class="btn rounded-full"><img src="./assets/checkbox.png" alt=""><span
+                                class="font-bold text-3xl" id="total-counter">23</span></button>
+                        <button id="ColorCng" class="btn rounded-full"><img src="./assets/theme-btn.png" alt=""></button>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br>
+
+
+        <section class="rounded-2xl flex gap-8">
+            <section class="max-w-full">
+                <section class="p-6 flex gap-2  rounded-t-xl bg-white">
+                    <div class="p flex items-center gap-5 bg-[#f4f7ff] p-4 rounded-xl">
+                        <div class="p-4 rounded-full bg-white"><img src="./assets/checkbox.png" alt=""></div>
+                        <div>
+                            <ul>Task Assigned</ul>
+                            <ul><span id="task-assigned" class="text-3xl font-bold">6</span></ul>
+                        </div>
+                    </div>
+                    <div id="blog-page" class="p flex items-center gap-5 p-4 rounded-xl grad grow">
+                        <div><img src="./assets/board.png" alt=""></div>
+                        <div class="font-medium text-2xl text-white"> Discover Something <br>New Today!
+                        </div>
+                    </div>
+                    <div class="p flex items-center gap-5 bg-[#f4f7ff] p-4 rounded-xl">
+                        <div class="p-4 rounded-full bg-white"><img src="./assets/calender.png" alt=""></div>
+                        <div id="dateShow" class="text-xl font-semibold"></div>
+                    </div>
+
+
+
+                </section>
+                <hr>
+                <section class=" bg-white rounded-b-xl">
+                    <div class="grid grid-cols-3 gap-5 p-5 max-md:grid-cols-2">
+                        <div class="card w-auto bg-[#f4f7ff]">
+                            <div class="card-body">
+                                <h4 class="bg-white w-fit p-2 rounded-xl">ShopeEase</h4>
+                                <h2 id="card1" class="card-title">Fix Mobile Button Issue</h2>
+                                <p class="bg-white p-3 w-fit rounded-xl ">You have to fix the Mobile Power Button. Otherwise it will be very difficult for you to use it.</p>
+                                <div class="flex justify-between">
+                                    <div>Deadline <br><span class="font-semibold">21 March 2025</span></div>
+                                    <button id="card-1" class="btn w-auto bg-blue-700 text-white">Completed</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card w-auto bg-[#f4f7ff]">
+                            <div class="card-body">
+                                <h4 class="bg-white w-fit p-2 rounded-xl">CloudSync</h4>
+                                <h2 id="card2" class="card-title">Add Dark Mode</h2>
+                                <p class="bg-white p-3 w-fit rounded-xl">Have to add dark mode for the user. Its been a new task for our team.</p>
+                                <div class="flex justify-between">
+                                    <div>Deadline <br><span class="font-semibold">21 March 2025</span></div>
+                                    <button id="card-2" class="btn w-auto bg-blue-700 text-white">Completed</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card w-auto bg-[#f4f7ff]">
+                            <div class="card-body">
+                                <h4 class="bg-white w-fit p-2 rounded-xl">SwiftPay</h4>
+                                <h2 id="card3" class="card-title">Optimize  Home page </h2>
+                                <p class="bg-white p-3 w-fit rounded-xl">Have to optimise the user experience, and make sure to use the correct UI components</p>
+                                <div class="flex justify-between">
+                                    <div>Deadline <br><span class="font-semibold">21 March 2025</span></div>
+                                    <button id="card-3" class="btn w-auto bg-blue-700 text-white">Completed</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card w-auto bg-[#f4f7ff]">
+                            <div class="card-body">
+                                <h4 class="bg-white w-fit p-2 rounded-xl">Meta</h4>
+                                <h2 id="card4" class="card-title">Add new emoji 🤲</h2>
+                                <p class="bg-white p-3 w-fit rounded-xl">Have to add emoji in the comment section. This emoji was missing from the pack</p>
+                                <div class="flex justify-between">
+                                    <div>Deadline <br><span class="font-semibold">21 March 2025</span></div>
+                                    <button id="card-4" class="btn w-auto bg-blue-700 text-white">Completed</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card w-auto bg-[#f4f7ff]">
+                            <div class="card-body">
+                                <h4 class="bg-white w-fit p-2 rounded-xl">Google LLC</h4>
+                                <h2 id="card5" class="card-title">Integrate OpenAI API </h2>
+                                <p class="bg-white p-3 w-fit rounded-xl">New API has been launched by OpenAI. So we have to implement it properly</p>
+                                <div class="flex justify-between">
+                                    <div>Deadline <br><span class="font-semibold">21 March 2025</span></div>
+                                    <button id="card-5" class="btn w-auto bg-blue-700 text-white">Completed</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card w-auto bg-[#f4f7ff]">
+                            <div class="card-body">
+                                <h4 class="bg-white w-fit p-2 rounded-xl">Glassdoar</h4>
+                                <h2 id="card6" class="card-title">Improve Job searching </h2>
+                                <p class="bg-white p-3 w-fit rounded-xl">Have to make a portal that handles job searching. and have to improve it.</p>
+                                <div class="flex justify-between">
+                                    <div>Deadline <br><span class="font-semibold">21 March 2025</span></div>
+                                    <button id="card-6" class="btn w-auto bg-blue-700 text-white">Completed</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+
+
+            
+            <section id="activityLog" class="p-3 w-2/4   bg-white rounded-xl ">
+        
+                    <div class="flex  justify-center items-center"><img class="p-2" src="./assets/activity.png" alt="">
+                        <h1 class="text-xl font-medium ">Activity Log</h1>
+                    </div><br>
+                    <div class="flex justify-center"><button id="clear-history" class="btn bg-blue-700 text-white">Clear History</button>
+                    </div>
+                    <br><br>
+                    <hr>
+                
+            </section>
+        </section>
+    </section>
+
+
+    <!-- JavaScript Link -->
+    <script src="./js/about.js"></script>
+    <script src="./js/card.js"></script>
+    <script src="./js/date.js"></script>
+    <script src="./js/clearHistory.js"></script>
+    <script src="./js/color.js"></script>
+
+</body>
+
+</html>
